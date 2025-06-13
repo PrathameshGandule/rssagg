@@ -19,8 +19,6 @@ goose postgres {db_url} up
 ```bash
 go build && ./rssagg
 ```
-
-- 
 ## Routes
 |Method   |Route                           |Short description             |Authenticated|
 |---------|--------------------------------|------------------------------|-------------|
