@@ -1,4 +1,26 @@
 # RSS AGGREGATOR
+## Steps to start the server
+- clone the repo
+```bash
+git clone https://github.com/PrathameshGandule/rssagg.git
+cd rssagg
+```
+- setup .env file
+```bash
+PORT=3000
+DB_URL=postgres://{username}:{password}@{ip_address}:{db_port}/{db_name}?sslmode=disable
+```
+- go inside `sql\schema` directory and run up migrations
+```bash
+cd sql/schema
+goose postgres {db_url} up
+```
+- build and run
+```bash
+go build && ./rssagg
+```
+
+- 
 ## Routes
 |Method   |Route                           |Short description             |Authenticated|
 |---------|--------------------------------|------------------------------|-------------|
